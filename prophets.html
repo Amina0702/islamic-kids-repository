@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>✨ Prophets of Islam ✨</title>
+  <style>
+    body {
+      background: radial-gradient(circle at top, #0b0c1a, #050511);
+      color: #fff;
+      font-family: 'Comic Sans MS', cursive;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+
+    /* Twinkling stars if you have stars.png in same folder */
+    body::before {
+      content: '';
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: url('stars.png') repeat;
+      animation: twinkle 15s linear infinite;
+      opacity: 0.4;
+      z-index: -1;
+    }
+
+    @keyframes twinkle {
+      0%,100%{transform:translateY(0);opacity:0.4;}
+      50%{transform:translateY(-5px);opacity:0.6;}
+    }
+
+    .prophets-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 30px 10px 60px 10px;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 150px;
+      height: 150px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 60%;
+      height: 60%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      cursor: pointer;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      backface-visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    }
+
+    .flip-card-front {
+      background: linear-gradient(135deg, #ffdf70, #ffb347);
+      color: #0b0c1a;
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 0 3px #fff, 0 0 5px #ffd700;
+    }
+
+    .flip-card-back {
+      background: linear-gradient(135deg, #6a5acd, #836fff);
+      color: #fff;
+      font-size: 11px;
+      flex-direction: column;
+      text-shadow: 0 0 3px #000, 0 0 5px #fff;
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-back p {
+      margin: 3px 0;
+    }
+
+    .back-home {
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .back-home a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: linear-gradient(45deg, #ffd700, #ffa500);
+      color: #0b0c1a;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #ffd700;
+      transition: all 0.3s ease;
+    }
+
+    .back-home a:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px #ffd700;
+    }
+
+    @media (max-width: 600px) {
+      .flip-card {
+        width: 120px;
+        height: 120px;
+      }
+      .flip-card-front {
+        font-size: 14px;
+      }
+      .flip-card-back {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="prophets-container">
+     <h1>✨ Meet the Prophets : The Guides from Allah (S.W.T) ✨</h1>
+ <h1>There are 25 Prophets (P.B.U.T) mentioned in the Holy Quran <br>Flip each card to learn about a Prophet and their important message<br><br></h1>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Adam A.S</div>
+      <div class="flip-card-back"><p>The first human and first prophet created by Allah</p></div>
+    </div>
+  </div>
+
+    <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Idris A.S</div>
+      <div class="flip-card-back"><p>Known for his great wisdom and for being among the first to write with a pen.</p></div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Nuh A.S</div>
+      <div class="flip-card-back"><p>Built the ark to save people and animals from the flood</p></div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Hud A.S</div>
+      <div class="flip-card-back"><p>Sent to the people of 'Ad to guide them to Allah</p></div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Saleh A.S</div>
+      <div class="flip-card-back"><p>Sent to Thamud Tribe with the miracle of the she-camel</p></div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Ibrahim A.S</div>
+      <div class="flip-card-back"><p>The patriarch of monotheism and builder of Kaaba, titled "Friend of Allah", known for his unwavering faith</p></div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Isma'il A.S</div>
+      <div class="flip-card-back"><p>Son of Ibrahim A.S, who helped rebuild the Kaaba and known for patience and obedience</p></div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Ishaq A.S</div>
+      <div class="flip-card-back"><p>Son of Ibrahim A.S, known for being a righteous prophet and being an ancestor to the Israelites</p></div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Ya'qub A.S</div>
+      <div class="flip-card-back"><p>Son of Ishaq, whose twelve sons became the leaders of the Twelve Tribes of Israel. Known for his patience.</p></div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Yusuf A.S</div>
+      <div class="flip-card-back"><p>Son of Ya'qub, known for his beauty, patience and forgiveness and gift of interpreting dreams. </p></div>
+    </div>
+  </div>
+
+   <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Ayyub A.S</div>
+      <div class="flip-card-back"><p>Known for extreme patience during intense suffering and hardships</p></div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Shu’ayb A.S</div>
+      <div class="flip-card-back"><p>Preached honesty and fairness to his people, teaching honest trade</p></div>
+    </div>
+  </div>
+
+
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Dhul-Kifl A.S</div>
+      <div class="flip-card-back"><p>Known as a patient and righteous prophet</p></div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Musa A.S</div>
+      <div class="flip-card-back"><p>Led the Israelites out of Egypt, received the Torah from Allah, the one to whom Allah spoke directly.</p></div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Harun A.S</div>
+      <div class="flip-card-back"><p>Brother of Musa A.S, gifted with eloquence, helped guide the people</p></div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Dawud A.S</div>
+      <div class="flip-card-back"><p>A King and prophet, received the Zabus, possessed a beautiful voice, known for his wisdom.</p></div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Sulaiman A.S</div>
+      <div class="flip-card-back"><p>Prophet, King and son of Dawud, known for his immense wisdom and authority to command the wind and jinn</p></div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Ilyas A.S</div>
+      <div class="flip-card-back"><p>Preached to guide his people back to Allah</p></div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Al-Yasa A.S</div>
+      <div class="flip-card-back"><p>Continued the message of Ilyas A.S</p></div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Yunus A.S</div>
+      <div class="flip-card-back"><p>Known for being swallowed by a large fish but saved by Allah after prayer</p></div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Zakariya A.S</div>
+      <div class="flip-card-back"><p>The guardian of Mariyum(a.s), continued to pray for a child in old age; father of Yahya A.S</p></div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Yahya A.S</div>
+      <div class="flip-card-back"><p>Son of Zakariya, Known for piety and honesty</p></div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Isa A.S</div>
+      <div class="flip-card-back"><p>Born miraculously to Mariyum (a.s) and received the Injeel as a guide, performed miracles and guided people</p></div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">Muhammad ❤️ S.A.W </div>
+      <div class="flip-card-back"><p>The Final Messenger and the Last prophet, brought the final message of Islam, the Qur’an. ❤️</p></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="back-home">
+  <a href="index.html">← Back to Home</a>
+</div>
+
+</body>
+</html>
