@@ -362,3 +362,10 @@ body::before {
   height: 150px;  /* adjust card height */
   flex: 0 0 auto; /* prevent cards from stretching */
 }
+
+
+/* Make all text wrap instead of overflowing */
+body, p, h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;    /* Break long words */
+    overflow-wrap: break-word; /* Newer standard */
+}
